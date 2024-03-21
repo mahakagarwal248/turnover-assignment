@@ -5,19 +5,19 @@ function Navbar() {
   const router = useRouter();
   return (
     <div>
-      <div className="flex w-full flex-row justify-end pt-2">
-        <p className="my-1 mr-10 cursor-pointer">Help</p>
-        <p className="my-1 mr-10 cursor-pointer">Orders & Returns</p>
-        <p className="my-1 mr-10 cursor-pointer">Hi, John</p>
+      <div className="flex w-full flex-row justify-evenly md:justify-end pt-2">
+        <p className="my-1 md:mr-10 cursor-pointer">Help</p>
+        <p className="my-1 md:mr-10 cursor-pointer">Orders & Returns</p>
+        <p className="my-1 md:mr-10 cursor-pointer">Hi, John</p>
       </div>
-      <div className="flex flex-row items-center py-2">
+      <div className="flex flex-col lg:flex-row items-center py-2">
         <p
-          className="ml-16 mr-auto cursor-pointer text-3xl font-bold"
+          className="m-auto lg:mr-auto lg:ml-16 my-3 lg:my-0 cursor-pointer text-3xl font-bold"
           onClick={() => router.push("/")}
         >
           ECOMMERCE
         </p>
-        <div className="mx-auto flex w-2/5 flex-row justify-evenly py-2 font-bold">
+        <div className="mx-auto flex w-full lg:w-2/5 flex-row justify-evenly py-2 font-bold">
           <p className="cursor-pointer">Categories</p>
           <p className="cursor-pointer">Sales</p>
           <p className="cursor-pointer">Clearance</p>
