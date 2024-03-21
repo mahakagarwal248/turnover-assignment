@@ -112,7 +112,7 @@ function Category() {
               );
             })
           ) : (
-            <></>
+            <p>No data Available At the moment!</p>
           )}
         </div>
         <div className="my-6">

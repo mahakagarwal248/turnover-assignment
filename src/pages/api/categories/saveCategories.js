@@ -9,7 +9,7 @@ const saveCategoriesHandler = async (
   /** @type {{ status: (arg0: number) => { (): any; new (): any; json: { (arg0: { status?: number; message?: string; }): object; new (): any; }; }; }} */ res,
 ) => {
   try {
-    for (var i = 0; i < 7; i++) {
+    for (var i = 0; i < 100; i++) {
       const slug = faker.lorem.slug(1);
       await prisma.categories.create({
         data: {
